@@ -1,0 +1,9 @@
+services:
+  forgery_detection:
+    build: .
+    ports:
+      - "8888:8888" 
+    volumes:
+      - .:/app      
+    environment:
+      - PYTHONUNBUFFERED=1
