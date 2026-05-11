@@ -12,12 +12,9 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-# 1. Pip'i en güncel sürüme yükselt
 RUN pip install --upgrade pip
-
-# 2. Timeout süresini 1000 saniyeye çıkararak büyük dosyaların indirilmesini bekle
 RUN pip install --default-timeout=1000 --no-cache-dir -r requirements.txt
 
-EXPOSE 8888
+EXPOSE 8000
 
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
