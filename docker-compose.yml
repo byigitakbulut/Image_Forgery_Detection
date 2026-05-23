@@ -1,9 +1,19 @@
+version: '3.8'
+
 services:
-  forgery_detection:
+  api:
     build: .
     ports:
-      - "8000:8000" 
+      - "8000:8000"
     volumes:
-      - .:/app      
-    environment:
-      - PYTHONUNBUFFERED=1
+      - .:/app
+      
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - api
