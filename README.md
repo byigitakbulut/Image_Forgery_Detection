@@ -27,7 +27,7 @@ Projeyi yerel ortamında çalıştırmak için aşağıdaki adımları izleyebil
 
 2.  **Proje Dizinine Girin:**
     ```bash
-    cd image-forgery-detection
+    cd Image_Forgery_Detection
     ```
 
 3.  **Docker Konteynerini Başlatın:**
