@@ -13,7 +13,7 @@ Bu proje, dijital görseller üzerindeki manipülasyonları (splicing, copy-move
 
 * **Dil:** Python 3.9+
 * **Görüntü İşleme:** OpenCV, scikit-image, PIL
-* **Makine Öğrenmesi / Derin Öğrenme:** PyTorch (veya TensorFlow), scikit-learn
+* **Makine Öğrenmesi / Derin Öğrenme:** TensorFlow, scikit-learn
 * **Veri Manipülasyonu:** NumPy, pandas
 
 ## Kurulum
@@ -22,19 +22,18 @@ Projeyi yerel ortamında çalıştırmak için aşağıdaki adımları izleyebil
 
 1.  **Depoyu Klonlayın:**
     ```bash
-    git clone [https://github.com/KULLANICI_ADIN/image-forgery-detection.git](https://github.com/KULLANICI_ADIN/image-forgery-detection.git)
+    git clone https://github.com/byigitakbulut/Image_Forgery_Detection
     cd image-forgery-detection
     ```
 
-2.  **Sanal Ortam Oluşturun (İsteğe Bağlı ama Önerilir):**
+2.  **Proje Dizinine Girin:**
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # Windows için: venv\Scripts\activate
+    cd image-forgery-detection
     ```
 
-3.  **Gereksinimleri Yükleyin:**
+3.  **Docker Konteynerini Başlatın:**
     ```bash
-    pip install -r requirements.txt
+    docker-compose up --build
     ```
 
 ## Kullanım
