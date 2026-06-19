@@ -23,7 +23,6 @@ Projeyi yerel ortamında çalıştırmak için aşağıdaki adımları izleyebil
 1.  **Depoyu Klonlayın:**
     ```bash
     git clone https://github.com/byigitakbulut/Image_Forgery_Detection
-    cd image-forgery-detection
     ```
 
 2.  **Proje Dizinine Girin:**
